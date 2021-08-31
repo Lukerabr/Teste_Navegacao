@@ -4,7 +4,8 @@ import 'package:navegacao/TelaSecundaria.dart';
 
 
 class TelaPrincipal extends StatefulWidget {
-  const TelaPrincipal({Key? key}) : super(key: key);
+
+
 
   @override
   _TelaPrincipalState createState() => _TelaPrincipalState();
@@ -26,7 +27,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
               onPressed: (){
                 Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context)=>TelaSecundaria())
+                    MaterialPageRoute(builder: (context)=>TelaSecundaria(valor: "Maria"))
                 );
               },
               child: Padding(

@@ -2,7 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:navegacao/TerceiraTela.dart';
 
 class TelaSecundaria extends StatefulWidget {
-  const TelaSecundaria({Key? key}) : super(key: key);
+
+  String ?valor;
+
+  TelaSecundaria({this.valor});
+
 
   @override
   _TelaSecundariaState createState() => _TelaSecundariaState();
@@ -29,7 +33,7 @@ class _TelaSecundariaState extends State<TelaSecundaria> {
               },
               child: Padding(
                 padding: EdgeInsets.all(15),
-                child: Text("Ir para a Terceira tela"),
+                child: Text("Ir para a Terceira tela, valor passado: ${widget.valor}"),
               ),
             )
           ],
