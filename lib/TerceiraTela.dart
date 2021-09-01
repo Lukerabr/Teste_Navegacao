@@ -19,7 +19,16 @@ class _TerceiraTelaState extends State<TerceiraTela> {
         padding: EdgeInsets.all(32),
         child: Column(
           children: <Widget>[
-            Text("Terceira Tela!")
+            Text("Terceira Tela!"),
+            ElevatedButton(
+              onPressed: (){
+                Navigator.pushNamed(context, "/secundaria");
+              },
+              child: Padding(
+                padding: EdgeInsets.all(15),
+                child: Text("Ir para a segunda tela"),
+              ),
+            )
           ],
         ),
       ),

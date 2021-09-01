@@ -26,14 +26,20 @@ class _TelaSecundariaState extends State<TelaSecundaria> {
           children: <Widget>[
             ElevatedButton(
               onPressed: (){
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context)=>TerceiraTela())
-                );
+                Navigator.pushNamed(context, "/terceira");
               },
               child: Padding(
                 padding: EdgeInsets.all(15),
-                child: Text("Ir para a Terceira tela, valor passado: ${widget.valor}"),
+                child: Text("Ir para a Terceira tela."),
+              ),
+            ),
+            ElevatedButton(
+              onPressed: (){
+                Navigator.pushNamed(context, "/");
+              },
+              child: Padding(
+                padding: EdgeInsets.all(15),
+                child: Text("Ir para a primeira tela"),
               ),
             )
           ],
